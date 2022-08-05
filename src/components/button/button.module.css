@@ -1,0 +1,27 @@
+
+
+
+.btn{
+  background: linear-gradient(101.86deg, #00FFCE 0%, #27A0D3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image-source: linear-gradient(100.84deg, #00FFCE 0%, #27A0D3 100%) !important;
+  border: 1px solid #00FFCE !important;
+}
+
+.btn:hover{
+  
+  border: 1px solid white !important;
+  color:white !important;
+  border-image-source: none !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+}
+
+@media screen and ( max-width:440px){
+  .btn{
+    padding: 5px 2px !important;
+    font-size: 10px !important;
+  }
+}
+

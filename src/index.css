@@ -1,0 +1,30 @@
+:root{
+  --bgColor: #0E1E24;
+  --primary:#182B32;
+  --secondary:#2A4149;
+  --text-primary: #00FFCE;
+  --text-secondary: white;
+}
+
+body{
+  margin: 0px;
+  background-color: var(--bgColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Manrope';
+  font-style: normal;
+  transition: all .5s;
+}
+
+@media screen and (max-width: 1200px){
+  body{
+    display: block;
+  }
+}

@@ -1,0 +1,161 @@
+
+
+.container{
+  max-width: 1520px;
+  margin: auto;
+  background: var(--primary);
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #2A4149;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.25);
+  padding: 50px;
+}
+
+.left{
+  width: 70%;
+}
+
+.right{
+  width: 30%;
+  position: relative;
+}
+.pro{
+  display: flex;
+  margin-bottom: 50px;
+}
+.pro_left{
+  margin-right: 40px;
+}
+
+.pro_right{
+ width: 70%;
+ position: relative;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+.panelNoneActive{
+  border-radius: 2px;
+  margin-top: 35px;
+  position: relative;
+}
+
+.panelActive {
+
+  padding: 1px;
+  position: relative;
+  background: linear-gradient(to right, #00FFCE, #27A0D3);
+ 
+  border-radius: 2px;
+  margin-top: 35px;
+}
+
+.panel {
+  background: #1C3138;
+  padding:15px;
+}
+
+.footer{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+.tab{
+  background:var(--secondary);
+  padding-right: 30px;
+  /* overflow: auto; */
+  height: 330px;
+  display: flex;
+}
+.mobile{
+  display: none;
+}
+.desktops{
+  display: block;
+}
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    
+    background-color: var(--bgColor);
+    
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--bgColor); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #2B4B57; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2B4B57;
+  }
+
+
+  @media screen and ( max-width: 1200px){
+    .container{
+      flex-direction: column;
+      margin-top: 50px;
+    }
+    .left, .right{
+      width: 100%;
+    }
+    .header{
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      background: var(--bgColor);
+      padding: 20px 50px;
+      /* width: 100%; */
+    }
+    .footer{
+      position: relative;
+      top: 20px;
+    }
+    .desktops{
+      display: none ;
+    }
+    
+    .mobile{
+      display: block;
+    }
+    .header{
+      padding: 20px 10px;
+    }
+  }
+
+  @media screen and (max-width: 780px){
+    .tab{
+      overflow: unset;
+      display: inline-table;
+    }
+    .pro{
+      flex-direction: column;
+    }
+    .pro_left, .pro_right{
+      width: 100%;
+    }
+    .pro_left img{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:500px){
+    .container{
+      padding: 20px;
+      padding-bottom: 50px;
+    }
+  }
